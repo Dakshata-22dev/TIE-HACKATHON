@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards with Mnemonics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Skills Training</h1>
+        <nav>
+            <ul>
+                <li><a href="#flashcards">Flashcards</a></li>
+                <li><a href="community.html">Community Help</a></li>
+                <li><a href="coupon.html">Gift Coupons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcards" class="flashcards">
+            <h2>Flashcards</h2>
+            <div class="progress-tracker">
+                <p>Completed Flashcards: <span id="completed-count">0</span>/5</p>
+            </div>
+            <div class="card">
+                <div class="card-front">
+                    <h3>Digital Marketing</h3>
+                    <p>What is Digital Marketing?</p>
+                </div>
+                <div class="card-back">
+                    <p>Using online channels to promote products/services.</p>
+                    <h4>Mnemonic: "D-M is Direct & Mobile!"</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-front">
+                    <h3>SEO</h3>
+                    <p>What does SEO stand for?</p>
+                </div>
+                <div class="card-back">
+                    <p>Search Engine Optimization.</p>
+                    <h4>Mnemonic: "SEO is Search for Earnings Online!"</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-front">
+                    <h3>Email Marketing</h3>
+                    <p>What is Email Marketing?</p>
+                </div>
+                <div class="card-back">
+                    <p>Sending emails to potential customers.</p>
+                    <h4>Mnemonic: "Email is Effective, Market with it!"</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-front">
+                    <h3>Content Marketing</h3>
+                    <p>What is Content Marketing?</p>
+                </div>
+                <div class="card-back">
+                    <p>Creating and distributing valuable content.</p>
+                    <h4>Mnemonic: "Create, Distribute, Repeat!"</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-front">
+                    <h3>PPC Advertising</h3>
+                    <p>What does PPC stand for?</p>
+                </div>
+                <div class="card-back">
+                    <p>Pay-Per-Click Advertising.</p>
+                    <h4>Mnemonic: "Pay only when clicked!"</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="coupon" class="coupon">
+            <h2>Congratulations!</h2>
+            <p>Complete the module to receive your gift coupon and a digital badge!</p>
+            <button class="claim-button">Claim Your Coupon</button>
+        </section>
+
+        <section id="community" class="community">
+            <h2>Community Help</h2>
+            <p>Join our community forum to ask questions and share knowledge.</p>
+            <a href="community.html" class="community-link">Visit Community Forum</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Skills Training. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example function to simulate completing a flashcard
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                const completedCount = document.getElementById('completed-count');
+                completedCount.innerText = parseInt(completedCount.innerText) + 1;
+            });
+        });
+    </script>
+</body>
+</html>

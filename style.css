@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4285f4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.flashcards {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-front, .card-back {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card-front {
+    background: #e0e0e0;
+}
+
+.card-back {
+    background: #f9f9f9;
+    display: none; /* Hide initially */
+}
+
+.card.active .card-back {
+    display: block; /* Show when active */
+}
+
+.card.active .card-front {
+    display: none; /* Hide when active */
+}
+
+.coupon, .community {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.coupon-code {
+    font-size: 24px;
+    font-weight: bold;
+    color: #34a853;
+}
+
+.back-button, .join-button, .claim-button {
+    background: #34a853;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.back-button a, .join-button a, .claim-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.back-button:hover, .join-button:hover, .claim-button:hover {
+    background: #28a745;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #4285f4;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.progress-tracker {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
